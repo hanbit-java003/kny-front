@@ -1,11 +1,12 @@
 @font-color: #333;
 @body-min-width: 900px;
+@back-gr-color: #f9fce9;
 
 body {
   padding-top: @header-height;
   min-width: @body-min-width;
   color: @font-color;
-  background-color: #f9fce9;
+  background-color: @back-gr-color;
 }
 
 ul {
@@ -16,7 +17,7 @@ ul {
 
 @header-height: 140px;
 @header-font-color: #eaeaea;
-@header-font-subcolor: #cccccc;
+@header-font-subcolor: rgba(158, 158, 158, 0.95);
 
 header {
   position: fixed;
@@ -62,21 +63,22 @@ header {
   height: 35px;
   margin-top: 15px;
   padding-top: 10px;
+  text-align: left;
 }
 
 .header-top-left-text {
+  position: relative;
   display: inline-block;
   cursor: pointer;
   margin-right: 45px;
 }
 
 .header-top-left-text:last-child {
-  text-align: right;
+  position: relative;
+  display: inline-block;
   margin-right: 0px;
-}
-
-.header-top-left-text > i {
-  font-weight: bold;
+  margin-left: 110px;
+  text-align: right;
 }
 
 .header-top-right {
@@ -124,6 +126,7 @@ header {
   letter-spacing: 2.5px;
   margin-right: 65px;
   color: @header-font-color;
+  cursor: pointer;
 }
 
 .header-menu-left > li:last-child {
@@ -144,17 +147,23 @@ header {
   font-size: 15px;
   letter-spacing: 2.5px;
   color: @header-font-color;
+  cursor: pointer;
 }
 
 .footer-top {
   width: 100%;
   height: 250px;
-  padding: 40px 240px 80px 240px;
-  background-color: #6a6a6a;
+  padding: 40px 240px 90px 240px;
+  background-color: #5f5f5f;
   color: @header-font-color;
-  font-family: D2Coding;
-  font-size: 13px;
-  letter-spacing: 0.5px;
+  font-family: Arial;
+  font-size: 12px;
+}
+
+.footer-top-text {
+  border-right: solid 1px @header-font-subcolor;
+  height: 100%;
+  vertical-align: top;
 }
 
 .footer-top-greytext {
@@ -163,19 +172,71 @@ header {
 
 .footer-top-left {
   display: inline-block;
+  padding-right: 70px;
+}
+
+.footer-top-left > li {
+  padding-bottom: 7px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.footer-top-left > li:first-child, .footer-top-right > li:first-child {
+  font-family: D2Coding;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.footer-top-left > li:last-child, .footer-top-right > li:last-child {
+  font-weight: normal;
 }
 
 .footer-top-left > li > span {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 21px;
 }
 
 .footer-top-center {
   display: inline-block;
+  padding: 0px 70px 0px 70px;
+  font-family: D2Coding;
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+.footer-top-center > span {
+  display: inline-block;
+  padding-top: 25px;
+  padding-bottom: 5px;
+  font-size: 8px;
+  letter-spacing: 0px;
 }
 
 .footer-top-right {
   display: inline-block;
+  padding-left: 70px;
+  border-right: 0;
+}
+
+.footer-top-right > li {
+  padding-bottom: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.footer-bottom {
+  padding-top: 50px;
+  width: 100%;
+  height: 160px;
+  background-color: #cdcdcd;
+  font-family: Arial;
+  font-size: 11px;
+  text-align: center;
+}
+
+.footer-bottom > ul >li:first-child {
+  padding-bottom: 5px;
+  font-weight: bold;
 }
 
 

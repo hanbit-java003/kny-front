@@ -1,1 +1,86 @@
 @import 'common.less';
+
+.main-img {
+  position: relative;
+  background-image: url(../img/grapefruit.jpg);
+  background-size: cover;
+  background-position-y: 70%;
+  width: 100%;
+  height: 650px;
+  border-bottom: solid 2.5px @back-gr-color;
+  cursor: pointer;
+}
+
+.main-text-box {
+  position: relative;
+  display: inline-block;
+  margin: 50px 0px 0px 850px;
+  padding: 50px;
+  width: 470px;
+  height: 310px;
+  background: rgba(255, 255, 255, 0.66);
+  font-family: Arial;
+  color: #3f3f3f;
+  text-align: center;
+  letter-spacing: -1px;
+}
+
+.main-text-box-first {
+  padding-bottom: 13px;
+  font-size: 25px;
+  border-bottom: solid 1.5px rgba(95, 95, 95, 0.89);
+}
+
+.main-text-box-first > span {
+  font-weight: bold;
+}
+
+.main-text-box-second {
+  padding: 15px 0px 15px 0px;
+  font-size: 20px;
+}
+
+.main-text-box-second > span {
+   font-weight: bold;
+}
+
+.main-text-box-third {
+  font-size: 17px;
+  font-family: D2Coding;
+  font-style: italic;
+  color: #848484;
+  letter-spacing: 2px;
+}
+
+.main-img-bottom {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 360px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.main-img-bottom > li {
+  position: relative;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  width: calc(100% / 2);
+  height: 100%;
+  padding-top: 140px;
+  color: @header-font-color;
+  font-size: 22px;
+  text-shadow: 2px 2px 2px #3c3c3c;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.main-img-bottom > li:first-child {
+  border-right: solid 2.5px @back-gr-color;
+}
+
+.main-img-bottom-text-top {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
