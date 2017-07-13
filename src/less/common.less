@@ -42,6 +42,7 @@ header {
   vertical-align: middle;
   padding: 40px 0px 0px 700px;
   letter-spacing: 2.5px;
+  cursor: pointer;
 }
 
 .header-top {
@@ -136,6 +137,11 @@ header {
   margin-right: 0px;
 }
 
+.header-menu-left > li:hover {
+  color: #a0a0a0;
+  transition: all, .5s;
+}
+
 .header-menu-right {
   position: absolute;
   display: inline-block;
@@ -151,6 +157,11 @@ header {
   letter-spacing: 2.5px;
   color: @header-font-color;
   cursor: pointer;
+}
+
+.header-menu-right > li:hover {
+  color: #a0a0a0;
+  transition: all, .5s;
 }
 
 .footer-top {
