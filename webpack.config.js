@@ -13,6 +13,9 @@ const pages = [{
 }, {
     html: 'sub',
     script: 'sub',
+}, {
+    html: 'about',
+    script: 'about',
 }];
 
 module.exports = {
