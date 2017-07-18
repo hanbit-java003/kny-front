@@ -14,8 +14,11 @@ const pages = [{
     html: 'sub',
     script: 'sub',
 }, {
-    html: 'about',
-    script: 'about',
+    html: 'page',
+    script: 'page',
+}, {
+    html: 'event',
+    script: 'event',
 }];
 
 module.exports = {

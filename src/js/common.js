@@ -1,12 +1,3 @@
-
-$('.header-logo').on('click', function() {
-    location.href = './';
-});
-
-$('.header-menu-left > li').on('click', function() {
-    location.href = './about.html';
-});
-
 var menus = require('./menu');
 
 function initMenu() {
@@ -19,4 +10,40 @@ function initMenu() {
     }
 }
 
-initMenu();
+initMenu(); // 불러옴.
+
+$('.header-logo').on('click', function() {
+    location.href = './';
+});
+
+$('.header-menu-left > li').on('click', function() {
+    var leftCategoryId = $(this).attr('leftCategory-id');
+
+    location.href = './page.html?id=' + leftCategoryId;
+});
+
+$('.header-menu-right > li').on('click', function() {
+    var rightCategoryId = $(this).attr('rightCategory-id');
+
+    location.href = './page.html?id=' + rightCategoryId;
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
