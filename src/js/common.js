@@ -19,15 +19,14 @@ $('.header-logo').on('click', function() {
 $('.header-menu-left > li').on('click', function() {
     var leftCategoryId = $(this).attr('leftCategory-id');
 
-    location.href = './page.html?id=' + leftCategoryId;
+    location.href = './' + leftCategoryId +'.html';
 });
 
 $('.header-menu-right > li').on('click', function() {
     var rightCategoryId = $(this).attr('rightCategory-id');
 
-    location.href = './page.html?id=' + rightCategoryId;
+    location.href = './' + rightCategoryId +'.html';
 });
-
 
 
 
