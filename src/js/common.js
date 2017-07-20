@@ -10,7 +10,7 @@ function initMenu() {
     }
 }
 
-initMenu(); // 불러옴.
+initMenu();
 
 $('.header-logo').on('click', function() {
     location.href = './';

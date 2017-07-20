@@ -13,8 +13,20 @@ $('.main-second-text-box-button').on('click', function () {
     location.href = './about.html'
 });
 
-var mainProducts = require('./main-products');
 var mainProductsList = require('./main-products-list');
+var mainProducts = require('./main-products');
+
+function initMainProductsList(mainProductsList) {
+    $('.main-items-list').empty();
+
+    var template = require('../template/main-products-list.hbs');
+
+    for (var i=0; i<mainProductsList.length; i++) {
+        var html = template(mainProductsList[i]);
+
+        $('.main-items-list').append(html);
+    }
+}
 
 function initMainProducts(mainProducts) {
     $('.main-items-img').empty();
@@ -28,5 +40,5 @@ function initMainProducts(mainProducts) {
     }
 }
 
+initMainProductsList(mainProductsList);
 initMainProducts(mainProducts);
-
