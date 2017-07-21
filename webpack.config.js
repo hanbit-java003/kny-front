@@ -11,8 +11,8 @@ const pages = [{
     html: 'index',
     script: 'main',
 }, {
-    html: 'sub',
-    script: 'sub',
+    html: 'product-detail',
+    script: 'product/detail',
 }, {
     html: 'about',
     script: 'about',
@@ -20,8 +20,8 @@ const pages = [{
     html: 'event',
     script: 'event',
 }, {
-    html: 'product',
-    script: 'product',
+    html: 'product-list',
+    script: 'product/list',
 }];
 
 module.exports = {

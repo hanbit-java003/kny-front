@@ -14,7 +14,7 @@ module.exports = [{
     title: 'Beets You',
     name: '비트 유',
     img: './img/beetu.JPG',
-    summary: ' 뿌리채소인 비트,당근,<br>생강의 조화로운 맛을<br>느낄 수 있는 주스<br>',
+    summary: '뿌리채소인 비트,당근,<br>생강의 조화로운 맛을<br>느낄 수 있는 주스<br>',
     kal: '250ml / 80kcal'
 }, {
     title: 'Ojay C',

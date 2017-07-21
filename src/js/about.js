@@ -1,4 +1,4 @@
-require ('../less/about.less')
+require ('../less/about.less');
 
 require('./common');
 

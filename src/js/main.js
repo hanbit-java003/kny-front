@@ -42,3 +42,42 @@ function initMainProducts(mainProducts) {
 
 initMainProductsList(mainProductsList);
 initMainProducts(mainProducts);
+
+var mainDiary = require('./main-diary');
+
+function initMainDiary(mainDiary) {
+    $('.main-diary-contents').empty();
+
+    var template = require('../template/main-diary.hbs');
+
+    for (var i =0; i<mainDiary.length; i++) {
+        var html = template(mainDiary[i]);
+
+        $('.main-diary-contents').append(html);
+    }
+}
+
+initMainDiary(mainDiary);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
