@@ -3,10 +3,10 @@ module.exports = [{
         id: 'about',
         title: 'JUICE&CO.'
     }, {
-        id: 'product',
+        id: 'product-list',
         title: 'PROGRAM'
     }, {
-        id: 'product',
+        id: 'product-list',
         title: 'CLEANSE'
     }]
 },{

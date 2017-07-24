@@ -11,8 +11,8 @@ const pages = [{
     html: 'index',
     script: 'main',
 }, {
-    html: 'product-detail',
-    script: 'product/detail',
+    html: 'sub',
+    script: 'sub',
 }, {
     html: 'about',
     script: 'about',
@@ -21,8 +21,11 @@ const pages = [{
     script: 'event',
 }, {
     html: 'product-list',
-    script: 'product/list',
-}];
+    script: 'product-list',
+}, {
+    html: 'product-detail',
+    script: 'product-detail',
+},];
 
 module.exports = {
     entry: utils.getEntry(pages),
