@@ -2,9 +2,7 @@ require('bootstrap');
 require('../less/product-list.less');
 
 var common = require('./common');
-
-var productPrice = require('./product/product-price');
-var productList = require('./product/product-list');
+var productList = require('./product/products');
 
 function initProductList(productList) {
     $('.main-items-img').empty();
