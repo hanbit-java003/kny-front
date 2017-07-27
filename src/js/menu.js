@@ -4,10 +4,10 @@ module.exports = [{
         title: 'JUICE&CO.'
     }, {
         id: 'product-list',
-        title: 'PROGRAM'
+        title: 'PROGRAM',
     }, {
         id: 'product-list',
-        title: 'CLEANSE'
+        title: 'CLEANSE',
     }]
 },{
     rightCategory: [{
