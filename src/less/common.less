@@ -20,6 +20,7 @@ ul {
 @header-height: 140px;
 @header-font-color: rgb(255, 255, 255);
 @header-font-subcolor: rgb(125, 125, 125);
+@header-back-color: #393939;
 
 header {
   position: fixed;
@@ -28,7 +29,7 @@ header {
   min-width: @body-min-width;
   width: 100%;
   height: @header-height;
-  background-color: #393939;
+  background-color: @header-back-color;
   color: @header-font-color;
   z-index: 1000;
 }
@@ -43,7 +44,7 @@ header {
 }
 
 .header-top {
-  position: absolute;
+  position: fixed;
   display: inline-block;
   left: 0px;
   height: 50px;
@@ -74,22 +75,56 @@ header {
   margin-right: 45px;
 }
 
-.header-top-left-text:last-child {
-  position: relative;
+#search-icon {
+  position: absolute;
   display: inline-block;
-  margin-right: 0px;
-  margin-left: 110px;
-  text-align: right;
+  left: 315px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: medium;
+  cursor: pointer;
+  transition: all .4s;
+}
+
+#search-icon:hover {
+  opacity: 0.4;
+  transition: all .4s;
+}
+
+.header-search-box {
+  position: absolute;
+  display: none;
+  width: 80%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0,0,0,0);
+  border-color: rgba(0,0,0,0);
+}
+
+#search {
+  position: absolute;
+  display: none;
+  left: 80%;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+#search:hover {
+  opacity: 0.5;
+  transition: all 0.4s;
 }
 
 .header-top-right {
+  position: absolute;
   display: inline-block;
   border-bottom: solid 1px @header-font-subcolor;
-  left: 400px;
+  right: -64px;
+  top: 13px;
   width: 330px;
   height: 35px;
   padding-top: 10px;
-  position: relative;
 }
 
 .header-top-right-text {

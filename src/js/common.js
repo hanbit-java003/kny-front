@@ -29,6 +29,11 @@ $('.header-menu-right > li').on('click', function() {
     location.href = './' + rightCategoryId +'.html';
 });
 
+$('#search-icon').on('click', function () {
+    $('.header-top-left-text').toggle('500');
+    $('#search, #search-input-box').toggle('500');
+});
+
 
 
 

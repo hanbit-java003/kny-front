@@ -48,15 +48,18 @@ function scrollProgram() {
     });
 }
 
+function ScrollCleanse() {
+    window.location.href = './product-list.html#scrollcleanse'
+}
 
 $('.btn-cleanse').on('click', function () {
-
+    ScrollCleanse();
     scrollCleanse();
 });
 
 
 $('.btn-program').on('click', function () {
-
+    window.location.href = './product-list.html'
     scrollProgram();
 });
 
