@@ -12,15 +12,29 @@ function initMenu() {
 
 initMenu();
 
+function scrollCleanse() {
+    $(document).ready(function () {
+        $('html, body').animate({
+            scrollTop: $('#cleanse-page').offset().top
+        }, 'slow');
+    });
+}
+
 $('.header-logo').on('click', function() {
     location.href = './';
 });
 
 $('.header-menu-left > li').on('click', function() {
     var leftCategoryId = $(this).attr('leftCategory-id');
+    var leftCateTitle = $(this).attr('leftCate-title');
 
+    if (leftCateTitle === 'CLEANSE') {
+        location.href = './product-list.html#scrollcleanse'
+        scrollCleanse();
+    }
+    else {
         location.href = './' + leftCategoryId +'.html';
-
+    }
 });
 
 $('.header-menu-right > li').on('click', function() {

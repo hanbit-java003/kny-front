@@ -8,7 +8,6 @@ module.exports = [{
     }, {
         id: 'product-list',
         title: 'CLEANSE',
-        scroll: true
     }]
 },{
     rightCategory: [{

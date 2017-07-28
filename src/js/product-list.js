@@ -48,19 +48,19 @@ function scrollProgram() {
     });
 }
 
-function ScrollCleanse() {
-    window.location.href = './product-list.html#scrollcleanse'
+function scrollCleanseLocation() {
+    location.href = './product-list.html#scrollcleanse'
 }
 
 $('.btn-cleanse').on('click', function () {
-    ScrollCleanse();
+    scrollCleanseLocation();
     scrollCleanse();
 });
 
 
 $('.btn-program').on('click', function () {
-    window.location.href = './product-list.html'
     scrollProgram();
+    history.pushState('','','./product-list.html');
 });
 
 
