@@ -13,10 +13,11 @@ function initMenu() {
 initMenu();
 
 function scrollCleanse() {
-    $(document).ready(function () {
+       $(document).ready(function () {
         $('html, body').animate({
             scrollTop: $('#cleanse-page').offset().top
         }, 'slow');
+
     });
 }
 

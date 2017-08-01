@@ -20,12 +20,15 @@ const pages = [{
     html: 'event',
     script: 'event',
 }, {
+    html: 'delivery',
+    script: 'delivery',
+}, {
     html: 'product-list',
     script: 'product-list',
 }, {
     html: 'product-detail',
     script: 'product-detail',
-},];
+}];
 
 module.exports = {
     entry: utils.getEntry(pages),
