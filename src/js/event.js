@@ -1,3 +1,3 @@
-require ('../less/event.less')
+require ('../less/event.less');
 
 require('./common');

@@ -20,6 +20,9 @@ const pages = [{
     html: 'event',
     script: 'event',
 }, {
+    html: 'basket',
+    script: 'basket',
+}, {
     html: 'board-event',
     script: 'board-event',
 }, {

@@ -49,6 +49,10 @@ $('#search-icon').on('click', function () {
     $('#search, #search-input-box').toggle('500');
 });
 
+$('#basket').on('click', function () {
+    location.href = './basket.html';
+});
+
 
 
 

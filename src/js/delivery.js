@@ -1,3 +1,3 @@
-require ('../less/delivery.less')
+require ('../less/delivery.less');
 
 require('./common');

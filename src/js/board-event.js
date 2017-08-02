@@ -1,6 +1,6 @@
-require ('../less/board-event.less')
+require ('../less/board-event.less');
 
-require ('./common')
+require ('./common');
 
 var eventPageList = require('./event-page-list');
 

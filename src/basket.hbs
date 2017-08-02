@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{> template/title}}</title>
+</head>
+<body>
+{{> template/header }}
+<section class="basket-page-main-section">
+    <img class="basket-page-title-logo" src='img/basket/title_cart.png'>
+    <div class="basket-page-main-middle">
+        <ul class="basket-box">
+            <li style="background-image: url('img/basket/ico_depth.png')">01 장바구니</li>
+            <li style="background-image: url('img/basket/ico_depth.png')">02 주문서작성</li>
+            <li>03 주문완료</li>
+        </ul>
+        <div class="basket-box-text">장바구니가 비어 있습니다.</div>
+        <div class="basket-page-tab">
+            <img src='img/basket/btn_order_all.png'>
+            <img src='img/basket/btn_order_select.png'>
+            <img id="order-ing" src='img/basket/btn_order_ing.png'>
+        </div>
+    </div>
+    <img src='img/basket/basket_info.png'>
+</section>
+{{> template/footer }}
+</body>
+</html>
