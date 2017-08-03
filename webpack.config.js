@@ -14,6 +14,9 @@ const pages = [{
     html: 'sub',
     script: 'sub',
 }, {
+    html: 'gallery',
+    script: 'gallery',
+}, {
     html: 'about',
     script: 'about',
 }, {

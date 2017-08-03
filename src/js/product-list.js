@@ -8,7 +8,7 @@ var cleanseProducts = require('./product/cleanseProducts');
 function initProductList(productList) {
     $('.main-items-img').empty();
 
-    var template = require('../template/main-products.hbs');
+    var template = require('../template/main/main-products.hbs');
 
     for (var i=0; i<productList.length; i++) {
         var html = template(productList[i]);

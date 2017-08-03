@@ -44,9 +44,13 @@ $('.header-menu-right > li').on('click', function() {
     location.href = './' + rightCategoryId +'.html';
 });
 
+$('#diary').on('click', function () {
+    location.href = './gallery.html';
+});
+
 $('#search-icon').on('click', function () {
-    $('.header-top-left-text').toggle('500');
-    $('#search, #search-input-box').toggle('500');
+    $('.header-top-left-text').toggle('fast');
+    $('#search, #search-input-box').toggle('fast');
 });
 
 $('#basket').on('click', function () {

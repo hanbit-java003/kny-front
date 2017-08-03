@@ -18,7 +18,7 @@ var mainProducts = require('./main-products');
 function initMainProducts(mainProducts) {
     $('.main-items-img').empty();
 
-    var template = require('../template/main-products.hbs');
+    var template = require('../template/main/main-products.hbs');
 
     for (var i=0; i<mainProducts.length; i++) {
         var html = template(mainProducts[i]);
@@ -34,7 +34,7 @@ var mainDiary = require('./main-diary');
 function initMainDiary(mainDiary) {
     $('.main-diary-contents').empty();
 
-    var template = require('../template/main-diary.hbs');
+    var template = require('../template/main/main-diary.hbs');
 
     for (var i =0; i<mainDiary.length; i++) {
         var html = template(mainDiary[i]);
