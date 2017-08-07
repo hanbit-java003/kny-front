@@ -23,6 +23,9 @@ const pages = [{
     html: 'event',
     script: 'event',
 }, {
+    html: 'login',
+    script: 'login',
+}, {
     html: 'basket',
     script: 'basket',
 }, {
