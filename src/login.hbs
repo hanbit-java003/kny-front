@@ -7,7 +7,23 @@
 <body>
 {{> template/header }}
 <section class="login-section">
-    <div class="login-title-logo" style="background-image: url(img/login/title_login.png)"></div>
+    <div class="login-logo-box">
+        <img src="img/login/title_login.png">
+    </div>
+    <div class="login-input-box">
+        <input type="text" class="input" style="background-image: url(img/login/login_id.png)"></input>
+        <input type="text" class="input" style="background-image: url(img/login/login_pw.png)"></input>
+    <ul class="find-box">
+        <li id="hover">FIND ID</li>
+        <li><img src='img/login/btn_find_line.png'></li>
+        <li id="hover">FIND PW</li>
+        <li><img src='img/login/btn_find_line.png'></li>
+        <li id="hover">JOIN</li>
+    </ul>
+        <div class="ok-box">
+            <img src='img/login/btn_login.png'>
+        </div>
+    </div>
 </section>
 {{> template/footer }}
 </body>

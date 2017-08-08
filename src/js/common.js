@@ -56,6 +56,10 @@ $('#basket').on('click', function () {
     location.href = './basket.html';
 });
 
+$('#login').on('click', function () {
+    location.href = './login.html';
+});
+
 
 
 
