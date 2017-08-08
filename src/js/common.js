@@ -60,7 +60,14 @@ $('#login').on('click', function () {
     location.href = './login.html';
 });
 
+function guestPage() {
+    $('.guest-section').show();
+}
 
+$('#my-page').on('click', function () {
+    location.href = './login.html#member';
+    guestPage();
+});
 
 
 
