@@ -10,3 +10,7 @@ function guestPage() {
 $('#my-page').on('click', function () {
     guestPage();
 });
+
+if (location.hash === '#member') {
+    $('.guest-section').show();
+}

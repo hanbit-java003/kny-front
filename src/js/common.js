@@ -1,4 +1,5 @@
 var menus = require('./menu');
+require('./login');
 
 function initMenu() {
     var template = require('../template/header-menu.hbs');
@@ -8,6 +9,8 @@ function initMenu() {
 
         $('.header-menu').append(menuHtml);
     }
+
+    attachEvents();
 }
 
 initMenu();
@@ -37,11 +40,22 @@ $('.header-menu-left > li').on('click', function() {
     }
 });
 
-$('.header-menu-right > li').on('click', function() {
-    var rightCategoryId = $(this).attr('rightCategory-id');
+function attachEvents() {
+    $('.header-menu-right > li').on('click', function() {
+        var rightCategoryId = $(this).attr('rightCategory-id');
+        var rightCateTitle = $(this).attr('rightCategory-title');
+        var subId = $(this).attr('rightCategory-subId');
 
-    location.href = './' + rightCategoryId +'.html';
-});
+        if (rightCateTitle === 'SERVICE') {
+            location.href = './board.html?id=' + subId;
+        }
+        else {
+            location.href = './' + rightCategoryId + '.html';
+        }
+    });
+
+
+}
 
 $('#diary').on('click', function () {
     location.href = './gallery.html';
@@ -60,13 +74,10 @@ $('#login').on('click', function () {
     location.href = './login.html';
 });
 
-function guestPage() {
-    $('.guest-section').show();
-}
-
 $('#my-page').on('click', function () {
+
     location.href = './login.html#member';
-    guestPage();
+    $('.guest-section').show();
 });
 
 

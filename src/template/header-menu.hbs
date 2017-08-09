@@ -6,5 +6,10 @@
 <ul class="header-menu-right">
     {{#each rightCategory}}
         <li rightCategory-id="{{id}}">{{~title~}}</li>
+            <ul class="service-sub-menu">
+                {{#each subMenus}}
+                    <li class="service-sub-list" subId-subId="{{subId}}">{{subTitle}}</li>
+                {{/each}}
+            </ul>
     {{/each}}
 </ul>

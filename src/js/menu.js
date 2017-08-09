@@ -15,7 +15,20 @@ module.exports = [{
         title: 'DELIVERY'
     },{
         id: 'board',
-        title: 'SERVICE'
+        title: 'SERVICE',
+        subMenus: [{
+            subId: 'notice',
+            subTitle: 'NOTICE',
+        },{
+            subId: 'faq',
+            subTitle: 'FAQ',
+        },{
+            subId: 'q&a',
+            subTitle: 'Q&A',
+        },{
+            subId: 'review',
+            subTitle: 'REVIEW',
+        }]
     },{
         id: 'board-event',
         title: 'EVENT'

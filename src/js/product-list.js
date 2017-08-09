@@ -40,6 +40,10 @@ function scrollCleanse() {
     });
 }
 
+if (location.hash === '#scrollcleanse') {
+    scrollCleanse();
+}
+
 function scrollProgram() {
     $(document).ready(function () {
         $('html, body').animate({
