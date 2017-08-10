@@ -29,6 +29,9 @@ const pages = [{
     html: 'basket',
     script: 'basket',
 }, {
+    html: 'board',
+    script: 'board',
+}, {
     html: 'board-event',
     script: 'board-event',
 }, {

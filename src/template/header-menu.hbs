@@ -5,11 +5,15 @@
 </ul>
 <ul class="header-menu-right">
     {{#each rightCategory}}
-        <li rightCategory-id="{{id}}">{{~title~}}</li>
-            <ul class="service-sub-menu">
-                {{#each subMenus}}
-                    <li class="service-sub-list" subId-subId="{{subId}}">{{subTitle}}</li>
-                {{/each}}
-            </ul>
+        <li rightCategory-id="{{id}}" rightCategory-subId="{{subId}}" rightCategory-title="{{title}}">{{~title~}}
+            {{#if subMenus}}
+                <ul class="service-sub-menu">
+                    {{#each subMenus}}
+                        <li rightCategory-subId="{{subId}}" class="service-sub-list">{{subTitle}}</li>
+                    {{/each}}
+                </ul>
+            {{/if}}
+        </li>
+
     {{/each}}
 </ul>

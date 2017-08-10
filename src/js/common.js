@@ -28,6 +28,7 @@ $('.header-logo').on('click', function() {
 });
 
 $('.header-menu-left > li').on('click', function() {
+
     var leftCategoryId = $(this).attr('leftCategory-id');
     var leftCateTitle = $(this).attr('leftCate-title');
 
@@ -55,7 +56,14 @@ function attachEvents() {
     });
 
 
+    $('.service-sub-menu > li').on('click',function (event) {
+        event.stopPropagation();
+        var subId = $(this).attr('rightCategory-subId');
+        location.href = './board.html?id=' + subId;
+    });
+
 }
+
 
 $('#diary').on('click', function () {
     location.href = './gallery.html';

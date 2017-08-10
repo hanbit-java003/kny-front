@@ -16,6 +16,7 @@ module.exports = [{
     },{
         id: 'board',
         title: 'SERVICE',
+        subId:'notice',
         subMenus: [{
             subId: 'notice',
             subTitle: 'NOTICE',

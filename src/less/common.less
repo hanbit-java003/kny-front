@@ -201,17 +201,28 @@ header {
 .service-sub-menu {
   position: absolute;
   display: inline-block;
+  min-width: 115px;
   top: 40px;
-  left: 210px;
+  left: 190px;
   text-align: center;
 }
 
 .service-sub-menu > li {
+  padding: 2px 0px;
+  min-height: 20px;
+  margin-bottom: 2px;
+  background-color: rgba(247, 245, 229, 0.55);
+  color: #242424;
   font-family: D2Coding;
+  font-weight: bold;
   font-size: 13px;
   letter-spacing: 1px;
-  line-height: 140%;
-  color: #242424;
+  line-height: 180%;
+  cursor: pointer;
+}
+
+.service-sub-menu > li:last-child {
+  margin: 0;
 }
 
 .footer-top {
