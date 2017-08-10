@@ -61,9 +61,19 @@ function attachEvents() {
         var subId = $(this).attr('rightCategory-subId');
         location.href = './board.html?id=' + subId;
     });
-
 }
 
+$('.header-menu-right > li').on('mouseover', function () {
+    var subMenu = $(this).find('.service-sub-menu');
+
+    subMenu.show();
+});
+
+$('.service-sub-menu').on('mouseout', function () {
+    var subMenu = $(this).find('.service-sub-menu');
+
+    subMenu.hide();
+});
 
 $('#diary').on('click', function () {
     location.href = './gallery.html';
