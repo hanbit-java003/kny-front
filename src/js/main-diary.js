@@ -1,4 +1,5 @@
 module.exports = [{
+    no: '6',
     img: './img/gallery/gallery1.jpg',
     title: '블렌즈 주스 4종에만 들어가는 달콤한 꿀!',
     text: '꿀은 단당류의 식품으로 단당류는 더 이상 분해될 수 없는 최소단위의 성분입니다.<br>' +
@@ -9,6 +10,7 @@ module.exports = [{
     move: 'move',
     top: true
 },{
+    no: '5',
     img: './img/gallery/gallery2.jpg',
     title: '주스앤코의 봄맞이 신메뉴 출시!',
     text: 'NEW MENU COMING SOON<br>' +
@@ -21,6 +23,7 @@ module.exports = [{
     move: 'move',
     top: true
 },{
+    no: '4',
     img: './img/gallery/gallery3.jpg',
     title: '주스앤코의 귤 농장',
     text: ' Tangerine Farm visiting<br>' +
@@ -34,6 +37,7 @@ module.exports = [{
     move: 'move',
     top: true
 },{
+    no: '3',
     img: './img/gallery/gallery4.jpg',
     title: '왜 콜드 프레스 주스인가',
     text: 'cold press juice<br>'+
@@ -46,6 +50,7 @@ module.exports = [{
     move: 'move',
     top: true
 },{
+    no: '2',
     img: './img/gallery/gallery5.jpg',
     title: '최고의 녹황색 채소, 케일!',
     text: '세계 10대 푸드에도 포함되고, JUICE&.CO가 사랑하는 케일!<br>' +
@@ -58,6 +63,7 @@ module.exports = [{
     '강력한 항암작용을 하고 비타민류는 암 치료제인 인터페론의 생...',
     move: 'move'
 },{
+    no: '1',
     img: './img/gallery/gallery6.jpg',
     title: '주스앤코의 사과 농장',
     text: 'Apple Farm visiting<br>' +

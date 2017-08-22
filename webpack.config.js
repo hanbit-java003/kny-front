@@ -17,11 +17,14 @@ const pages = [{
     html: 'gallery',
     script: 'gallery',
 }, {
+    html: 'gallery-read',
+    script: 'gallery-read',
+}, {
     html: 'about',
     script: 'about',
 }, {
-    html: 'event',
-    script: 'event',
+    html: 'event-read',
+    script: 'event-read',
 }, {
     html: 'login',
     script: 'login',
@@ -32,8 +35,8 @@ const pages = [{
     html: 'board',
     script: 'board',
 }, {
-    html: 'board-event',
-    script: 'board-event',
+    html: 'event',
+    script: 'event',
 }, {
     html: 'delivery',
     script: 'delivery',

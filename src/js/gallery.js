@@ -17,3 +17,36 @@ function initGallery(mainDiary) {
 }
 
 initGallery(mainDiary);
+readGallery();
+
+function readGallery() {
+    $('.main-diary-img').on('click', function () {
+        var num = $(this).attr('number');
+
+        location.href = './gallery-read.html?no=' + num;
+    });
+
+    $('.main-diary-text-move').on('click', function () {
+        var num = $(this).attr('number');
+
+        location.href = './gallery-read.html?no=' + num;
+    });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

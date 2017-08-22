@@ -1,14 +1,14 @@
 <li class="{{#if top}}
     top
 {{/if}}">
-    <div class="main-diary-img" style="background-image: url({{img}})"></div>
+    <div class="main-diary-img" number="{{no}}" style="background-image: url({{img}})"></div>
     <div class="main-diary-title">
         {{title}}
     </div>
     <div class="main-diary-text">
         {{{text}}}
     </div>
-    <div class="main-diary-text-move">
+    <div class="main-diary-text-move" number="{{no}}">
         {{move}}
     </div>
 </li>

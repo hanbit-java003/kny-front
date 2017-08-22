@@ -31,7 +31,7 @@ module.exports = [{
             subTitle: 'REVIEW',
         }]
     },{
-        id: 'board-event',
+        id: 'event',
         title: 'EVENT'
     }]
 

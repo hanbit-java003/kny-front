@@ -3,14 +3,24 @@ require('../less/main.less');
 
 var common = require('./common');
 
-$('.main-event-page').on('click', function () {
+$('.main-img').on('click', function () {
+    location.href = './gallery-read.html?no=5'
+});
 
-    location.href = './event.html'
+$('.main-event-page').on('click', function () {
+    location.href = './event-read.html?no=10'
 });
 
 $('.main-second-text-box-button').on('click', function () {
-
     location.href = './about.html'
+});
+
+$('.main-review-page').on('click', function () {
+    location.href = './board.html?id=review'
+});
+
+$('.move').on('click', function () {
+    location.href = './gallery.html'
 });
 
 var mainProducts = require('./main-products');

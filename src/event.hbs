@@ -6,23 +6,28 @@
 </head>
 <body>
 {{> template/header }}
-<div class="event-page">
-    <section class="event-page-title">
-        <img src="img/event/title_event.png">
-        <div class="event-page-date">
-            17.06.02
-            <div class="event-page-icon">
-                <img src="img/event/rightArrow.svg">
-            </div>
+<section class="event-banner">
+    <ul class="event-banner-top">
+        <li class="event-banner-left">
+            <img src='img/event/event-board/event_left_banner.jpg'>
+        </li>
+        <li>
+            <img src='img/event/event-board/event_right_banner.jpg'>
+        </li>
+        <div class="event-banner-bottom">
+            <img src='img/event/event-board/event_center_banner.jpg'>
         </div>
-    </section>
-    <section class="event-page-contents">
-        <img class="event-page-contents-img" src="img/event/eventImg.png">
-    </section>
-    <section class="event-page-move">
-        <div class="event-page-move-text">move</div>
-    </section>
-</div>
+    </ul>
+</section>
+<section class="event-list">
+    <div class="event-list-logo">
+        <img src='img/event/title_event.png'>
+    </div>
+    <div class="event-contents-box">
+        <ul class="event-contents-box-ul">
+        </ul>
+    </div>
+</section>
 {{> template/footer }}
 </body>
 </html>
