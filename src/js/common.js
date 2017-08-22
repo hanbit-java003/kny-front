@@ -67,13 +67,24 @@ $('.header-menu-right > li').on('mouseover', function () {
     var subMenu = $(this).find('.service-sub-menu');
 
     subMenu.show();
+
 });
 
-$('.service-sub-menu').on('mouseout', function () {
-    var subMenu = $(this).find('.service-sub-menu');
+$('.service-sub-menu > li').on('mouseout', function () {
 
-    subMenu.hide();
+    if (mouseOver) {
+        $('.service-sub-menu').show()
+    }
+
+    $('.service-sub-menu').hide();
 });
+
+function mouseOver() {
+    $('.service-sub-menu > li').on('mouseover', function () {
+
+    });
+
+}
 
 $('#diary').on('click', function () {
     location.href = './gallery.html';
